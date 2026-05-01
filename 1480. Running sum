@@ -1,0 +1,16 @@
+class Solution(object):
+    def runningSum(self, nums):
+        arr =[]
+        for i in range(len(nums)):
+            if i==0:
+                arr.append(nums[i])
+                sum1 = sum(arr)
+            else:
+                fin = sum1+nums[i]
+                arr.append(fin)
+                
+                sum1 = sum1+nums[i]
+
+        return arr
+
+
